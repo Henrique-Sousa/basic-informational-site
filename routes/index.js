@@ -16,8 +16,4 @@ router.get('/contact-me', (req, res, next) => {
 	res.sendFile(path.join(rootDirectory, '/contact-me.html'));
 });
 
-router.get("*", (req, res, next) => {
-    res.sendFile(path.join(rootDirectory, '/404.html'));
-});
-
 module.exports = router;
