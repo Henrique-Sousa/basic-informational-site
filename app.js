@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 
 app.use((err, req, res, next) => {
     res.status(404);
-    res.sendFile(path.join(__dirname, '/404.html'));
+    res.sendFile(path.join(__dirname, 'html', '404.html'));
 });
 
 var port = process.env.PORT || 8080;
